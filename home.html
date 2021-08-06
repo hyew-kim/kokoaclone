@@ -7,28 +7,26 @@
     <link fref="style.css" rel="stylesheet" />
     <style>
       body {
+        hegiht :100vh
         margin: 20px;
+        display: flex;
+        justify-content: space-between; /*main axis*/
+        align-items: center; /*cross axis*/
       }
-      .teal {
+      div {
+        width: 100px;
+        height: 100px;
         background-color: teal;
       }
-      /*.tomato = class tomato */
-      .tomato {
-        background-color: tomato;
-        color: whitesmoke;
-      }
-      .btn {
-        padding: 5px 10px;
-        border-radius: 5px;
+      #second {
+        background-color: red;
       }
     </style>
   </head>
   <body>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
+    <div></div>
+    <div id="second"></div>
+    <div></div>
+    <div></div>
   </body>
 </html>
