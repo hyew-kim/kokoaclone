@@ -7,16 +7,22 @@
     <link fref="style.css" rel="stylesheet" />
     <style>
       body {
-        hegiht :100vh
+        height: 100vh;
         margin: 20px;
         display: flex;
-        justify-content: space-between; /*main axis*/
+        justify-content: center; /*main axis*/
         align-items: center; /*cross axis*/
       }
       div {
-        width: 100px;
-        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        width: 500px;
+        height: 300px;
         background-color: teal;
+        flex-wrap: nowrap;
+        flex-direction: row; /*main axis 위치라고 생각하면 편함*/
       }
       #second {
         background-color: red;
@@ -24,9 +30,9 @@
     </style>
   </head>
   <body>
-    <div></div>
-    <div id="second"></div>
-    <div></div>
-    <div></div>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+    <div>4</div>
   </body>
 </html>
