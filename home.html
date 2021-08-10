@@ -10,26 +10,37 @@
         height: 1000vh;
         margin: 50px;
       }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+      a:visited {
+        color: tomato;
+      } /*링크 방문 후*/
+      a:hover {
+        color: teal;
+      } /*커서가 위에 있을 때*/
+      a:focus {
+        color: yellowgreen;
+      } /*선택 후*/
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
       }
-      div > span {
-        text-decoration: dashed;
-      }
-      p + span {
-        text-decoration: underline;
-      }
-      p span {
-        color: wheat;
+      form:hover input:focus {
+        background-color: sienna;
       }
     </style>
   </head>
   <body>
     <div>
-      <p>Lorem fdfdfdfdfdffdfdfdfdfdfdfd.<span>inside</span></p>
-      <span>hello</span>
+      <a
+        href="https://www.apple.com/kr/?afid=p238%7CO8Mn6LyK_mtid_18707vxu38484&cid=aos-kr-kwna-"
+        >GO</a
+      >
+      <form>
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+      </form>
     </div>
   </body>
 </html>
