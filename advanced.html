@@ -6,22 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      a {
-        color: wheat;
-        background-color: tomato;
-        text-decoration: none;
-        padding: 3px 5px;
-        border-radius: 5px;
-        font-size: 50px;
-        transition: all 1s ease-out;
+      body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
       }
-      a:hover {
-        color: tomato;
-        background-color: wheat;
+      @keyframes supersexycoinflip {
+        0% {
+          transform: rotateX(0);
+        }
+        25% {
+          transform: scale(2);
+        }
+        50% {
+          border-radius: 0px;
+          transform: rotatex(180deg) translateX(100px);
+          border-color: tomato;
+        }
+        75% {
+          transform: scale(5);
+          border-radius: 25px;
+        }
+        100% {
+          transform: rotateX(0);
+        }
+      }
+      img {
+        border: 3px solid black;
+        border-radius: 50%;
+        animation: supersexycoinflip 5s ease-in-out infinite;
       }
     </style>
   </head>
   <body>
-    <a href="#">Go home</a>
+    <img src="https://nomadcoders.co/m.png" />
   </body>
 </html>
