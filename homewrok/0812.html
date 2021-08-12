@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my screen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <!--header라고 하는게 더 좋음-->
+      <div class="status-bar__column">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <div class="status-bar__column">
+        <span>Playlist</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <!--main-->
+      <div class="content__song-data">
+        <!--section-->
+        <div class="content__image box">
+          <i class="far fa-image fa-6x"></i>
+        </div>
+
+        <div class="content__title">
+          <h3>Random</h3>
+          <h3>Love</h3>
+          <h5>by Divay Kapoor</h5>
+        </div>
+      </div>
+
+      <div class="content__buttons">
+        <div class="content__play box">
+          <i class="fas fa-play fa-2x"></i>
+          <p>Play</p>
+        </div>
+
+        <div class="content__circle">
+          <i class="far fa-heart fa-3x"></i>
+        </div>
+
+        <div class="content__circle">
+          <i class="fas fa-plus fa-3x"></i>
+        </div>
+      </div>
+
+      <div class="content__playlist">
+        <div class="content__red list">
+          <div class="red one box"></div>
+          <div class="info">
+            <h5>Matargasti</h5>
+            <h6>Mohit Chauhan</h6>
+          </div>
+        </div>
+
+        <div class="content__pink list">
+          <div class="pink one box"></div>
+          <div class="info">
+            <h5>Attitude</h5>
+            <h6>Lewis OfMan·Attitude</h6>
+          </div>
+        </div>
+
+        <div class="content__blue list">
+          <div class="blue one box"></div>
+          <div class="info">
+            <h5>Try Everthing</h5>
+            <h6>shakira · Zootopia</h6>
+          </div>
+        </div>
+
+        <div class="content__mint list">
+          <div class="mint one box"></div>
+          <div class="info">
+            <h5>Sunflower</h5>
+            <h6>Joseph Vincent·Sunflower</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/3665b67531.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
