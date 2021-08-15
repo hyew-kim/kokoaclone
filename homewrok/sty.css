@@ -1,0 +1,200 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Style+Script&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 360px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+h3 {
+  color: #eaeaea;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: #ffce33;
+  padding: 40px 15px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+header > * {
+  width: 33%;
+}
+
+header i:last-child {
+  text-align: right;
+}
+
+main {
+  margin: 40px;
+}
+
+form input::placeholder {
+  color: #eaeaea;
+  font-size: 25px;
+}
+
+.search {
+  width: 95%;
+  position: relative;
+  top: -30px;
+  margin: 0 auto; /*auto로 하면 좌우 값 일정하게 해서 알아서 설정함*/
+}
+.search form {
+  display: flex;
+}
+
+.search__input {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 1px 0px rgba(128, 128, 128, 0.274);
+  width: 100%;
+}
+
+.search__submit {
+  font-family: FontAwesome;
+  border: none;
+  color: #eaeaea;
+  background-color: white;
+  position: relative;
+  right: 43px;
+}
+.recommand {
+  margin: 100px 0 70px 0;
+}
+
+.recommand__cover {
+  height: 345px;
+  width: 227px;
+  border-radius: 20px;
+  margin-right: 100px;
+}
+.recommand__content {
+  display: flex;
+}
+
+.recommand__info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+}
+
+.star {
+  height: 30px;
+  width: 110px;
+  margin: 7px 0;
+}
+.recommand__sort {
+  display: flex;
+  align-items: space-between;
+  margin: 10px 0;
+}
+.recommand__book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.box {
+  border-radius: 10px;
+}
+
+.white {
+  width: 130px;
+  height: 48px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.black {
+  color: white;
+  background-color: black;
+  width: 180px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mark {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #ffce33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+ul {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+.top-adventures__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-adbentures_img {
+  width: 150px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.author {
+  margin-top: 50px;
+}
+.author__image {
+  height: 275px;
+  width: 223px;
+  margin-right: 100px;
+  border-radius: 20px;
+}
+
+.author__content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.author__info h2 {
+  position: absolute;
+  top: 7px;
+}
+.author__info h3 {
+  font-size: 30px;
+  position: absolute;
+  bottom: 7px;
+  width: 50%;
+}
