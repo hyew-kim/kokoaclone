@@ -1,0 +1,45 @@
+.icons-row--more {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.icons-row--more .icons-row__icon {
+  width: 25%;
+  margin-top: 35px;
+}
+/*width를 지정하여  화면 크기 상관없이 wrap이 적용되도록 하기*/
+.suggestions {
+  padding-top: 20px;
+  border-top: var(--main-border);
+  margin-top: 24px;
+}
+
+.suggestions__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.suggestions__apps {
+  display: flex;
+  margin-top: 20px;
+}
+
+.suggestions__app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.suggestions__app img {
+  width: 53px;
+  height: 53px;
+  border-radius: 15px;
+}
+
+.suggestions__app span {
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+  opacity: 0.8;
+}

@@ -140,3 +140,6 @@ input:focus {
   color: #2e263e;
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
